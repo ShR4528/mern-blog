@@ -22,7 +22,7 @@ export const User = () => {
           <>
             <button
               className='img'
-              onClick={() => !setProfileOpen(profileOpen)}>
+              onClick={() => setProfileOpen(!profileOpen)}>
               <img
                 src='https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=600'
                 alt=''
@@ -75,9 +75,7 @@ export const User = () => {
             )}
           </>
         ) : (
-          <Link to='/login'>
-            <button>My Account</button>
-          </Link>
+          <button>My Account</button>
         )}
       </div>
     </>

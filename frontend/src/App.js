@@ -8,6 +8,8 @@ import { Regsiter } from './pages/login/Regsiter';
 import { Details } from './pages/details/Details';
 import { Account } from "./pages/account/Account";
 import { Login } from './pages/login/Login';
+import { Create } from './components/create/Create';
+import { Footer } from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -20,8 +22,9 @@ const App = () => {
           <Route exact path='/register' component={Regsiter} />
           <Route exact path='/details/:id' component={Details} />
           <Route exact path='/account' component={Account} />
+          <Route exact path='/create' component={Create} />
         </Switch>
-
+        <Footer />
       </Router>
     </>
   );
