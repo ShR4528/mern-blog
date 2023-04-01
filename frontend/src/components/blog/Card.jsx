@@ -18,7 +18,7 @@ export const Card = () => {
                             <div className='details'>
                                 <div className='tag'>
                                     <AiOutlineTags className='icon' />
-                                    <a href='/'>#{item.category}</a>
+                                    <a href='./'>#{item.category}</a>
                                 </div>
                                 <Link to={`/details/${item.id}`} className='link'>
                                     <h3>{item.title}</h3>
@@ -28,9 +28,7 @@ export const Card = () => {
                                     <AiOutlineClockCircle className='icon' /><label>{item.date}</label>
                                     <AiOutlineComment className='icon' /><label>27</label>
                                     <AiOutlineShareAlt className='icon' /><label>SAHRE</label>
-
-
-                                </div>
+                                    </div>
                             </div>
                         </div>
                     ))}

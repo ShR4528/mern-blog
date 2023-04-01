@@ -30,7 +30,7 @@ export const User = () => {
             </button>
             {profileOpen && (
               <div className='openProfile boxItems' onClick={close}>
-                <Link to='account'>
+                <Link to='/account'>
                   <div className='image'>
                     <div className='img'>
                       <img

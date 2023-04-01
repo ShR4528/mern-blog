@@ -4,7 +4,10 @@ import './App.css';
 
 import { Home } from './pages/home/Home';
 import { Header } from './components/header/Header';
+import { Regsiter } from './pages/login/Regsiter';
 import { Details } from './pages/details/Details';
+import { Account } from "./pages/account/Account";
+import { Login } from './pages/login/Login';
 
 const App = () => {
   return (
@@ -13,7 +16,10 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/details' component={Details} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Regsiter} />
+          <Route exact path='/details/:id' component={Details} />
+          <Route exact path='/account' component={Account} />
         </Switch>
 
       </Router>

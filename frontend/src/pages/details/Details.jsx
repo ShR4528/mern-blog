@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './details.css';
 import '../../components/header/Header.css';
-//import img from '../../assets/images/b5.jpg';
 import { useParams } from 'react-router-dom';
 import { blog } from '../../assets/data/data';
 import { BsPencilSquare } from 'react-icons/bs';
@@ -16,7 +15,7 @@ export const Details = () => {
     if (blogs) {
       setBlogs(blogs);
     }
-  }, []);
+  }, [id]);
 
   return (
     <>
