@@ -4,6 +4,7 @@ import './App.css';
 
 import { Home } from './pages/home/Home';
 import { Header } from './components/header/Header';
+import { Details } from './pages/details/Details';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/details' component={Details} />
         </Switch>
 
       </Router>
